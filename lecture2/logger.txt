@@ -1,0 +1,4 @@
+1.[root@dev-server~]# logger -p kern.info "Message of peace and kindness to the emissaries from Alpha Centauri"
+
+2. [root@dev-server~]# sudo cat /var/log/messages | grep "Message of peace"
+Dec 2 07:41:41 dev-server root[11724]: Message of peace and kindness to the emissaries from Alpha Centauri

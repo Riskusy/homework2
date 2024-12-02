@@ -1,0 +1,14 @@
+1. sudo nano /etc/rsyslog.conf
+
+2. Добавляем в файл:
+ *.info /var/log/my.log
+
+3. Sudo touch /var/log/my.log
+sudo chown root:root /var/log/my.log
+sudo chmod 640 /var/log/my.log
+
+4. sudo systemctl restart rsyslog
+
+5.logger -p user.info "Test Test Test"
+
+6. cat /var/log/my.log
